@@ -1,0 +1,2 @@
+VSD SCL PRIMITIVES: ALL TESTS PASSED
+verification/tb/vsd_tb_scl_primitives.v:207: $finish called at 29000 (1ps)

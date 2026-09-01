@@ -1,0 +1,25 @@
+STEP 8B OPENFPGA/SCL AUDIT
+Defined models: 14
+Referenced models: 13
+Missing models: []
+Sky130 references: 0
+45nm references: 4
+L4 references: 2
+
+DEFINED CIRCUIT MODELS
+vsd_chan_segment
+vsd_direct_interc
+vsd_frac_lut4
+vsd_mux_tree
+vsd_mux_tree_tapbuf
+vsd_scl_buf
+vsd_scl_buf4
+vsd_scl_cfg_ff
+vsd_scl_gpio
+vsd_scl_inv
+vsd_scl_inv2
+vsd_scl_mux2
+vsd_scl_or2
+vsd_scl_user_scan_ff
+
+PASS: Step 8B architecture mapping

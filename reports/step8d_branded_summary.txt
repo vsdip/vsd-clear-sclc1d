@@ -1,0 +1,8 @@
+Step 8D branded functional netlist
+Top module: vsd_fpga_core_scl_2x2
+Generated module branding: PASS
+Duplicate module declarations: 0
+Compilation: PASS
+Simulation: PASS
+Functional result: Simulation Succeed
+Physical design status: NOT STARTED

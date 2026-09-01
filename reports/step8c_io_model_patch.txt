@@ -1,0 +1,5 @@
+PATCHED: vsd_scl_gpio.Y
+type=inout
+is_global=true
+is_io=true
+is_data_io=true
