@@ -1,0 +1,10 @@
+Circuit model: vsd_scl_gpio
+Type: iopad
+prefix=Y type=inout lib_name=Y is_io=true is_data_io=true
+prefix=A type=output lib_name=A is_io=true is_data_io=false
+prefix=en type=sram lib_name=mem_out is_io=false is_data_io=false
+prefix=IE type=output lib_name=IE is_io=true is_data_io=false
+prefix=OE type=output lib_name=OE is_io=true is_data_io=false
+prefix=outpad type=input lib_name=in is_io=false is_data_io=false
+prefix=inpad type=output lib_name=out is_io=false is_data_io=false
+PASS: exactly one bidirectional data-I/O port

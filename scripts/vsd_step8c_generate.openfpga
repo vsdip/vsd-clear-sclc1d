@@ -1,0 +1,31 @@
+vpr ${VPR_ARCH_FILE} ${VPR_TESTBENCH_BLIF} --clock_modeling ideal --device ${OPENFPGA_VPR_DEVICE_LAYOUT} --route_chan_width ${OPENFPGA_VPR_ROUTE_CHAN_WIDTH} --absorb_buffer_luts off --skip_sync_clustering_and_routing_results on
+
+read_openfpga_arch -f ${OPENFPGA_ARCH_FILE}
+
+read_openfpga_simulation_setting -f ${OPENFPGA_SIM_SETTING_FILE}
+
+link_openfpga_arch --activity_file ${ACTIVITY_FILE} --sort_gsb_chan_node_in_edges
+
+check_netlist_naming_conflict --fix --report ./netlist_renaming.xml
+
+pb_pin_fixup --verbose
+
+lut_truth_table_fixup
+
+build_fabric --compress_routing
+
+write_fabric_hierarchy --file ./fabric_hierarchy.txt
+
+repack
+
+build_architecture_bitstream --verbose --write_file ./fabric_independent_bitstream.xml
+
+build_fabric_bitstream --verbose
+
+write_fabric_bitstream --file ./fabric_bitstream.bit --format plain_text
+
+write_fabric_verilog --file ./SRC --explicit_port_mapping --print_user_defined_template --verbose
+
+write_full_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VERILOG_TESTBENCH} --explicit_port_mapping --include_signal_init --bitstream ./fabric_bitstream.bit
+
+exit

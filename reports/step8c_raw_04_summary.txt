@@ -1,0 +1,9 @@
+Step 8C raw OpenFPGA baseline
+Generation: PASS
+Compilation: PASS
+Simulation: PASS
+Test result: Simulation Succeed
+Run directory: generated/step8c_raw_04
+Architecture: architecture/openfpga/vsd_vpr_arch_2x2.xml
+OpenFPGA architecture: architecture/openfpga/vsd_openfpga_arch_sclc1d.xml
+Benchmark: verification/benchmarks/vsd_test_and2.blif

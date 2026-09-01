@@ -1,0 +1,8 @@
+.model vsd_test_and2
+.inputs vsd_a vsd_b
+.outputs vsd_y
+
+.names vsd_a vsd_b vsd_y
+11 1
+
+.end

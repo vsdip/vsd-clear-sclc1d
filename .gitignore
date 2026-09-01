@@ -1,0 +1,8 @@
+build/
+generated/
+*.vcd
+*.vvp
+*.pyc
+__pycache__/
+vpr_stdout.log
+reports/*.log

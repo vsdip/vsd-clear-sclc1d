@@ -1,0 +1,1 @@
+cc3b8d8967aea9a5e81a2ead871eb50edfcc82be9b352b568d732d9d74fafec3  architecture/openfpga/vsd_openfpga_arch_sclc1d.xml
