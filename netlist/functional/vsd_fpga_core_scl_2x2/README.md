@@ -46,6 +46,7 @@ scripts/vsd_verify_branded_netlist.sh
 ## 5. Create portable hashes
 
 Rewrite the raw hashes without Codespaces absolute paths:
+```
 
 ```bash
 (cd generated/step8c_raw_04 && find SRC -type f -name '*.v' -print0 | sort -z | xargs -0 sha256sum) > reports/step8c_raw_04_verilog_sha256.txt
