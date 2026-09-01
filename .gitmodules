@@ -1,3 +1,7 @@
 [submodule "third_party/clear"]
 	path = third_party/clear
 	url = https://github.com/efabless/clear.git
+[submodule "third_party/openfpga"]
+	path = third_party/openfpga
+	url = https://github.com/efabless/OpenFPGA_bitstream_generation.git
+	branch = SOFA
