@@ -41,7 +41,7 @@ From the repository root:
 SCL_FLOW_ROOT=/workspaces/vsd-sclc1d-orfs \
 scripts/vsd_verify_branded_netlist.sh
 
-
+```
 
 ## 5. Create portable hashes
 
