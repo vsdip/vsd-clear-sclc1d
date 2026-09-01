@@ -72,13 +72,6 @@ The checked-in reports record:
 
 Recorded tool versions are Yosys 0.27+3, VPR 8.1.0-dev and OpenFPGA 1.2.753-dev.
 
-From the repository root, with the SCL flow repository available:
-
-```bash
-SCL_FLOW_ROOT=/workspaces/vsd-sclc1d-orfs \
-scripts/vsd_verify_branded_netlist.sh
-```
-
 ## Portability
 
 The architecture and generation flow are portable. The checked-in structural netlist is SCL-specific and must be regenerated after replacing the primitive mapping and architecture characterization for another process.
